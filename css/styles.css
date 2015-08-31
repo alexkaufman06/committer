@@ -8,3 +8,26 @@
   height: 230px;
   background-image: url(../images/keyboard.jpg);
 }
+
+/*.navbar {
+  max-height: 65px;
+}
+
+.navbar-brand {
+  margin-top: -14px;
+  padding-bottom: 9px;
+}
+
+.nav-search {
+  margin-top: 12px;
+}*/
+
+.sub-nav {
+  margin-top: -30px;
+  max-height: 65px;
+}
+
+.sub-nav-items {
+  margin-left: 36%;
+  margin-top: -9px;
+}
