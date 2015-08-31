@@ -8,86 +8,153 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
-     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle collapsed"
-                 data-toggle="collapse" data-target="#navbar"
-                 aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-         </button>
-         <a class="navbar-brand" href="#">
-           <img src="images/avatar.png" />
-         </a>
-       </div>
-       <div id="navbar" class="navbar-collapse collapse">
-         <ul class="nav navbar-nav">
-           <form class="navbar-form navbar-left nav-search hidden-xs hidden-sm" role="search">
-             <div class="form-group" aria-expanded="false">
-               <input type="text" class="form-control" placeholder="Search Committer">
-             </div>
-             <button type="submit" class="btn btn-default">
-               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-             </button>
-           </form>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="images/avatar.png" />
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <form class="navbar-form navbar-left nav-search hidden-xs hidden-sm" role="search">
+            <div class="form-group" aria-expanded="false">
+              <input type="text" class="form-control" placeholder="Search Committer">
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </form>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-           <li><a href="../navbar/">Default</a></li>
-           <li><a href="../navbar-static-top/">Have an account?</a></li>
-           <li class="dropdown">
-             <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                role="button" aria-haspopup="true" aria-expanded="false">Log in
-                <span class="caret"></span>
-             </a>
-             <ul class="dropdown-menu">
-               <li><a href="#">Log in</a></li>
-               <li><a href="#">Make an account</a></li>
-             </ul>
-           </li>
-         </ul>
-       </div>
-     </div>
-   </nav>
+          <li><a href="../navbar/">Default</a></li>
+          <li><a href="../navbar-static-top/">Have an account?</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+               role="button" aria-haspopup="true" aria-expanded="false">Log in
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Make an account</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-   <div class="container">
-     <div class="jumbotron">
-     </div>
-     <nav class="navbar navbar-default sub-nav hidden-xs hidden-sm">
-       <div class="container">
-         <div id="navbar">
-           <ul class="nav navbar-nav sub-nav-items text-center">
-             <li><a href="#">Commits<br>20.5K</a></li>
-             <li><a href="#">Following<br>452</a></li>
-             <li><a href="#">Followers<br>1.2M</a></li>
-             <li><a href="#">Favorites<br>24</a></li>
-           </ul>
-         </div>
-       </div>
-     </nav>
-     <h1 class="text-center">Commiter</h1>
-     <div class="row text-center">
-     <div class="col-sm-3"></div>
-     <div class="col-sm-6">
-       <ul id="tabs" class="nav nav-tabs commit-tabs" data-tabs="tabs">
-         <li class="active"><a href="#commits" data-toggle="tab">Commits</a></li>
-         <li><a href="#replies" data-toggle="tab">Commits & Replies</a></li>
-         <li><a href="#photo" data-toggle="tab">Photo & Video</a></li>
-       </ul>
+  <div class="container">
+    <div class="jumbotron">
+    </div>
+    <nav class="navbar navbar-default sub-nav hidden-xs hidden-sm">
+      <div class="container">
+        <div id="navbar">
+          <ul class="nav navbar-nav sub-nav-items text-center">
+            <li><a href="#">Commits<br>20.5K</a></li>
+            <li><a href="#">Following<br>452</a></li>
+            <li><a href="#">Followers<br>1.2M</a></li>
+            <li><a href="#">Favorites<br>24</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="text-center">Commiter</h1>
+    <div class="row text-center">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6 hidden-xs hidden-sm">
+      <ul id="tabs" class="nav nav-tabs commit-tabs" data-tabs="tabs">
+        <li class="active"><a href="#commits" data-toggle="tab">Commits</a></li>
+        <li><a href="#replies" data-toggle="tab">Commits & Replies</a></li>
+        <li><a href="#photo" data-toggle="tab">Photo & Video</a></li>
+      </ul>
       <div id="my-tab-content" class="tab-content">
         <div class="tab-pane active" id="commits">
-          <p>commits</p>
+          <ul class="seed-commits">
+            <br>
+            <li>
+              <span class="pull-left">
+                <img src="images/avatar.png" />
+                <strong>Alex Kaufman</strong>
+                <small>@alexkaufman</small> -Aug 30
+                <br/>
+              </span>
+              <br/><br/><br/>
+              <span class="text-center">
+                -Responive navbar and sub-nav are not fully functional.
+              </span>
+            </li>
+          </ul>
         </div>
-
         <div class="tab-pane" id="replies">
-          <p>replies</p>
+          <ul class="seed-commits">
+            <br>
+            <li>
+              <span class="pull-left">
+                <img src="images/avatar.png" />
+                <strong>Alex Kaufman</strong>
+                <small>@alexkaufman</small> -Aug 30
+                <br/>
+              </span>
+              <br/><br/><br/>
+              <span class="text-center">
+                -Responive navbar and sub-nav are not fully functional.
+              </span>
+              <br/><br/>
+              <span class="text-right">
+                <strong>Joe Smo</strong>
+                <small>-Aug 30</small>
+                <br/>
+                -I agree this could use some work!
+              </span>
+            </li>
+          </ul>
         </div>
         <div class="tab-pane" id="photo">
-          <p>photo</p>
+          <ul class="seed-commits">
+            <br>
+            <li>
+              <span class="pull-left">
+                <img src="images/avatar.png" />
+                <strong>Alex Kaufman</strong>
+                <small>@alexkaufman</small> -Aug 30
+                <br/>
+              </span>
+              <br/><br/><br/>
+              <span class="text-center">
+                <p>-This will make a good banner for my twitter clone.</p>
+                <img src="images/keyboard.jpg" style="width: 350px;" />
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+    <div class="col-sm-6 hidden-md hidden-lg">
+      <ul class="seed-commits">
+        <br>
+        <li>
+          <span class="pull-left">
+            <img src="images/avatar.png" />
+            <strong>Alex Kaufman</strong>
+            <small>@alexkaufman</small> -Aug 30
+            <br/>
+          </span>
+          <br/><br/><br/>
+          <span class="text-center">
+            -Responive navbar and sub-nav are not fully functional.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <script src="js/jquery-1.11.2.js"></script>
   <script src="js/bootstrap.js" ></script>

@@ -15,6 +15,14 @@
 }
 
 .sub-nav-items {
-  margin-left: 36%;
+  margin-left: 34%;
   margin-top: -9px;
+}
+
+.seed-commits {
+  list-style-type: none;
+}
+
+.commit-tabs {
+  margin-left: 20%;
 }
